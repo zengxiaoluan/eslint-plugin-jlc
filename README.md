@@ -1,6 +1,6 @@
 # eslint-plugin-zeng
 
-Preferences eslint rule for zeng
+Preferences of eslint for jlc and jlc eda
 
 ## Installation
 
@@ -13,16 +13,16 @@ npm i eslint --save-dev
 Next, install `eslint-plugin-jlc`:
 
 ```sh
-npm install eslint-plugin-zeng --save-dev
+npm install eslint-plugin-jlc --save-dev
 ```
 
 ## Usage
 
-Add `zeng` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `jlc` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-  "plugins": ["zeng"]
+  "plugins": ["jlc"]
 }
 ```
 
@@ -31,7 +31,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "zeng/rule-name": 2
+    "jlc/comments-need-space": 2
   }
 }
 ```
