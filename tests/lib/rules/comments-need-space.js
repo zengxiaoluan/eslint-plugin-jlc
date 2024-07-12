@@ -20,6 +20,7 @@ ruleTester.run("comments-need-space", rule, {
   valid: [
     // give me some code that won't trigger a warning
     "// give me some code that won't trigger a warning",
+    "// give me some code that won't trigger a warning 中英文混排，需要加空格",
   ],
 
   invalid: [
@@ -30,6 +31,12 @@ ruleTester.run("comments-need-space", rule, {
               console.log("aa");
             }`,
       errors: [{ messageId: "needSpace", type: null }],
+    },
+    {
+      code: `function hello() {
+              // give me some code that won't trigger a warning中英文混排，需要加空格
+            }`,
+      errors: [{ messageId: "spaceWithEnZh", type: null }],
     },
   ],
 });

@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jlc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Preferences of eslint for jlc and jlc eda",
   "keywords": [
     "eslint",

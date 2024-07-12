@@ -17,3 +17,19 @@ function hello() {
   // comments
 }
 ```
+
+Comments like below is not ok:
+
+```js
+function hello() {
+  // comments中英文混杂没有空格
+}
+```
+
+That is good:
+
+```js
+function hello() {
+  // comments 中英文混杂有空格
+}
+```
