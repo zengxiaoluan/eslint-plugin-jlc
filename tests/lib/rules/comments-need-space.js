@@ -38,5 +38,11 @@ ruleTester.run("comments-need-space", rule, {
             }`,
       errors: [{ messageId: "spaceWithEnZh", type: null }],
     },
+    {
+      code: `function hello() {
+              // 啊g
+            }`,
+      errors: [{ messageId: "spaceWithEnZh", type: null }],
+    },
   ],
 });
