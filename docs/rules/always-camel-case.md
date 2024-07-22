@@ -1,6 +1,6 @@
-# Always camal case every thing (`always-camel-case`)
+# Always camel case every thing (`jlc/always-camel-case`)
 
-Please describe the origin of the rule here.
+<!-- end auto-generated rule header -->
 
 ## Rule Details
 
@@ -9,17 +9,13 @@ This rule aims to...
 Examples of **incorrect** code for this rule:
 
 ```js
-
 // fill me in
-
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
 // fill me in
-
 ```
 
 ### Options

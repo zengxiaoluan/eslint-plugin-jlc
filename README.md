@@ -48,9 +48,10 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 
 <!-- begin auto-generated rules list -->
 
-| Name                                                             | Description             |
-| :--------------------------------------------------------------- | :---------------------- |
-| [comments-need-space](docs/rules/comments-need-space.md)         | comments need space     |
-| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal |
+| Name                                                             | Description                   |
+| :--------------------------------------------------------------- | :---------------------------- |
+| [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing |
+| [comments-need-space](docs/rules/comments-need-space.md)         | comments need space           |
+| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal       |
 
 <!-- end auto-generated rules list -->
