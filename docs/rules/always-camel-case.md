@@ -4,28 +4,27 @@
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to enforce camal case in naming things.
 
 Examples of **incorrect** code for this rule:
 
 ```js
-// fill me in
+let a_b = 1;
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-// fill me in
+let aB = 1;
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
