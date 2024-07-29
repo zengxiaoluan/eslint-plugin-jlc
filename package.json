@@ -42,8 +42,8 @@
     "eslint": ">=8.57.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx simple-git-hooks && npm run fileNameIsLowerCase",
-    "pre-push": "npm run format",
+    "pre-commit": "npm run fileNameIsLowerCase",
+    "pre-push": "npx simple-git-hooks",
     "preserveUnused": true
   },
   "license": "MIT"
