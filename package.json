@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-jlc",
   "version": "0.0.5",
-  "type": "module",
+  "type": "commonjs",
   "description": "Preferences of eslint for jlc and jlc eda",
   "keywords": [
     "eslint",
@@ -20,7 +20,7 @@
     "lint:js": "eslint .",
     "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator",
-    "fileNameIsLowerCase": "node ./scripts/lower-case.js"
+    "fileNameIsLowerCase": "node ./scripts/lower-case.mjs"
   },
   "dependencies": {
     "requireindex": "^1.2.0"

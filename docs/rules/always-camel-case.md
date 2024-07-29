@@ -17,14 +17,3 @@ Examples of **correct** code for this rule:
 ```js
 let aB = 1;
 ```
-
-### Options
-
-
-
-## When Not To Use It
-
-
-
-## Further Reading
-
