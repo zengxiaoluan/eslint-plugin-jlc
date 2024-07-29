@@ -42,7 +42,7 @@
     "eslint": ">=8.57.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run fileNameIsLowerCase",
+    "pre-commit": "npm run fileNameIsLowerCase && npm run lint && npm run test",
     "pre-push": "npx simple-git-hooks",
     "preserveUnused": true
   },
