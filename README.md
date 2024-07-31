@@ -52,6 +52,7 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 | :--------------------------------------------------------------- | :---------------------------- |
 | [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing |
 | [comments-need-space](docs/rules/comments-need-space.md)         | comments need space           |
+| [no-then](docs/rules/no-then.md)                                 | No then with promise          |
 | [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal       |
 
 <!-- end auto-generated rules list -->

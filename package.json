@@ -25,6 +25,7 @@
   "dependencies": {
     "requireindex": "^1.2.0"
   },
+  "homepage": "https://github.com/zengxiaoluan/eslint-plugin-jlc",
   "devDependencies": {
     "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0",
