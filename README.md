@@ -40,7 +40,9 @@ Then configure the rules you want to use under the rules section.
 
 <!-- begin auto-generated configs list -->
 
-TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
+|    | Name          |
+| :- | :------------ |
+| ✅  | `recommended` |
 
 <!-- end auto-generated configs list -->
 
@@ -48,12 +50,15 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 
 <!-- begin auto-generated rules list -->
 
-| Name                                                             | Description                                   |
-| :--------------------------------------------------------------- | :-------------------------------------------- |
-| [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing                 |
-| [comments-need-space](docs/rules/comments-need-space.md)         | comments need space                           |
-| [kebab-case](docs/rules/kebab-case.md)                           | kebab case your file name and directory name. |
-| [no-then](docs/rules/no-then.md)                                 | No then with promise                          |
-| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal                       |
+💼 Configurations enabled in.\
+✅ Set in the `recommended` configuration.
+
+| Name                                                             | Description                                   | 💼 |
+| :--------------------------------------------------------------- | :-------------------------------------------- | :- |
+| [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing                 | ✅  |
+| [comments-need-space](docs/rules/comments-need-space.md)         | comments need space                           | ✅  |
+| [kebab-case](docs/rules/kebab-case.md)                           | kebab case your file name and directory name. | ✅  |
+| [no-then](docs/rules/no-then.md)                                 | No then with promise                          | ✅  |
+| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal                       | ✅  |
 
 <!-- end auto-generated rules list -->

@@ -1,5 +1,7 @@
 # Always camel case every thing (`jlc/always-camel-case`)
 
+💼 This rule is enabled in the ✅ `recommended` config.
+
 <!-- end auto-generated rule header -->
 
 ## Rule Details
