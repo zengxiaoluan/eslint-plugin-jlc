@@ -23,6 +23,10 @@ ruleTester.run("kebab-case", rule, {
       code: "",
       filename: "a-b.js",
     },
+    {
+      code: "",
+      filename: "ab.js",
+    },
   ],
 
   invalid: [
