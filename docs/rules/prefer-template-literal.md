@@ -1,5 +1,7 @@
 # Prefer template literal (`jlc/prefer-template-literal`)
 
+💼 This rule is enabled in the ✅ `recommended` config.
+
 <!-- end auto-generated rule header -->
 
 That is bad:

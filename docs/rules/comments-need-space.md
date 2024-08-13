@@ -1,5 +1,7 @@
 # Comments need space (`jlc/comments-need-space`)
 
+💼 This rule is enabled in the ✅ `recommended` config.
+
 <!-- end auto-generated rule header -->
 
 Comments like below is not ok:
