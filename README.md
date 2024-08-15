@@ -1,7 +1,6 @@
 # eslint-plugin-jlc [![npm](https://img.shields.io/npm/v/eslint-plugin-jlc.svg)](https://www.npmjs.com/package/eslint-plugin-jlc) [![build status](https://github.com/zengxiaoluan/eslint-plugin-jlc/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/zengxiaoluan/eslint-plugin-jlc/actions/workflows/node.js.yml) [![Download](https://img.shields.io/npm/dm/eslint-plugin-jlc)](https://www.npmjs.com/package/eslint-plugin-jlc)
 
-
-Preferences of eslint for jlc and jlc eda
+An opinionated collection of ESLint rules used by JLC.
 
 ## Installation
 
