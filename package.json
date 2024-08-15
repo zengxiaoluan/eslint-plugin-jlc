@@ -2,7 +2,7 @@
   "name": "eslint-plugin-jlc",
   "version": "0.0.8",
   "type": "commonjs",
-  "description": "Preferences of eslint for jlc and jlc eda",
+  "description": "An opinionated collection of ESLint rules used by JLC.",
   "keywords": [
     "eslint",
     "eslint plugin",
