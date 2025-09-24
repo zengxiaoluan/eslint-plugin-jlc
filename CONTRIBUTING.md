@@ -10,4 +10,16 @@ To develop and test this repository:
 
 1. Run `npm i` in eslint-plugin-jlc's root folder.
 
-2. Run `yo eslint:rule` in root folder to create a new rule.
+2. You must also install Yeoman, if you don't have it installed already. To install Yeoman, you can run this command:
+
+```bash
+npm i -g yo
+```
+
+3. With Node.js and Yeoman installed, you can run this command:
+
+```bash
+npm i -g generator-eslint
+```
+
+4. Run `yo eslint:rule` in root folder to create a new rule.

@@ -11,7 +11,9 @@ export function getChangedFiles() {
 }
 
 async function main() {
-  let files = await getChangedFiles().filter((_) => _ !== "README.md");
+  let files = await getChangedFiles().filter(
+    (_) => _ !== "README.md" && _ !== "CONTRIBUTING.md"
+  );
   for (const file of files) {
     if (/[A-Z]/.test(file)) {
       console.log(file);
