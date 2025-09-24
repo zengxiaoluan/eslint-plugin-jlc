@@ -30,17 +30,28 @@ ruleTester.run("comments-need-space", rule, {
               //a
               console.log("aa");
             }`,
+      output: `function hello() {
+              // a
+              // a
+              console.log("aa");
+            }`,
       errors: [{ messageId: "needSpace", type: null }],
     },
     {
       code: `function hello() {
               // give me some code that won't trigger a warning中英文混排，需要加空格
             }`,
+      output: `function hello() {
+              // give me some code that won't trigger a warning 中英文混排，需要加空格
+            }`,
       errors: [{ messageId: "spaceWithEnZh", type: null }],
     },
     {
       code: `function hello() {
               // 啊g
+            }`,
+      output: `function hello() {
+              // 啊 g
             }`,
       errors: [{ messageId: "spaceWithEnZh", type: null }],
     },

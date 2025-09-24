@@ -51,15 +51,16 @@ Then configure the rules you want to use under the rules section.
 <!-- begin auto-generated rules list -->
 
 💼 Configurations enabled in.\
-✅ Set in the `recommended` configuration.
+✅ Set in the `recommended` configuration.\
+🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Name                                                             | Description                                   | 💼 |
-| :--------------------------------------------------------------- | :-------------------------------------------- | :- |
-| [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing                 | ✅  |
-| [comments-need-space](docs/rules/comments-need-space.md)         | comments need space                           | ✅  |
-| [import-constraint-ecad](docs/rules/import-constraint-ecad.md)   | The constraints of import                     |    |
-| [kebab-case](docs/rules/kebab-case.md)                           | kebab case your file name and directory name. | ✅  |
-| [no-then](docs/rules/no-then.md)                                 | No then with promise                          | ✅  |
-| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal                       | ✅  |
+| Name                                                             | Description                                   | 💼 | 🔧 |
+| :--------------------------------------------------------------- | :-------------------------------------------- | :- | :- |
+| [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing                 | ✅  |    |
+| [comments-need-space](docs/rules/comments-need-space.md)         | Comments need space                           | ✅  | 🔧 |
+| [import-constraint-ecad](docs/rules/import-constraint-ecad.md)   | The constraints of import                     |    |    |
+| [kebab-case](docs/rules/kebab-case.md)                           | kebab case your file name and directory name. | ✅  |    |
+| [no-then](docs/rules/no-then.md)                                 | No then with promise                          | ✅  |    |
+| [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal                       | ✅  |    |
 
 <!-- end auto-generated rules list -->
