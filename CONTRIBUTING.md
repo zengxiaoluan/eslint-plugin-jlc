@@ -23,3 +23,11 @@ npm i -g generator-eslint
 ```
 
 4. Run `yo eslint:rule` in root folder to create a new rule.
+
+## Update docs
+
+If you add a new rule, please remember to update the `README.md` file to include your new rule. You can follow the format of the existing rules in the file.
+
+```bash
+npm run update:eslint-docs
+```
