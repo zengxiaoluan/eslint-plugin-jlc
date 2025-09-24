@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jlc",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "commonjs",
   "description": "An opinionated collection of ESLint rules used by JLC.",
   "keywords": [
