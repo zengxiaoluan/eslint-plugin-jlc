@@ -58,7 +58,7 @@ Then configure the rules you want to use under the rules section.
 | :--------------------------------------------------------------- | :-------------------------------------------- | :- | :- |
 | [always-camel-case](docs/rules/always-camel-case.md)             | Always camel case every thing                 | ✅  |    |
 | [comments-need-space](docs/rules/comments-need-space.md)         | Comments need space                           | ✅  | 🔧 |
-| [import-constraint-ecad](docs/rules/import-constraint-ecad.md)   | The constraints of import                     |    |    |
+| [import-constraint](docs/rules/import-constraint.md)             | The constraints of import                     |    |    |
 | [kebab-case](docs/rules/kebab-case.md)                           | kebab case your file name and directory name. | ✅  |    |
 | [no-then](docs/rules/no-then.md)                                 | No then with promise                          | ✅  |    |
 | [prefer-template-literal](docs/rules/prefer-template-literal.md) | prefer template literal                       | ✅  |    |

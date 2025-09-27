@@ -1,5 +1,4 @@
 import { execSync } from "node:child_process";
-import { kill } from "node:process";
 
 export function getChangedFiles() {
   let files = execSync("git diff HEAD --name-only --diff-filter=d")
@@ -17,7 +16,7 @@ async function main() {
   for (const file of files) {
     if (/[A-Z]/.test(file)) {
       console.log(file);
-      kill(-1);
+      throw new Error("File paths must be lower case.");
     }
   }
 }
