@@ -20,10 +20,14 @@ import { a } from "@app/modules/part";
 
 ## Options
 
-This rule accepts an array of constraint objects, each with the following properties:
+This rule accepts an array of constraint objects. Each constraint can be either:
 
+**Object-based constraint:**
 - `modulePrefix` (string, required): The import path prefix to check
 - `maxDepth` (integer, optional): The expected number of path segments. Default: `3`
+
+**Function-based constraint:**
+- `test` (function, required): A function that receives `(importPath, node)` and returns `true` to report an error
 
 ### Configuration Examples
 
@@ -45,9 +49,9 @@ This rule accepts an array of constraint objects, each with the following proper
 }
 ```
 
-**Multiple constraints:**
+**Multiple constraints (object + function):**
 
-```json
+```js
 {
   "rules": {
     "jlc/import-constraint": [
@@ -58,8 +62,7 @@ This rule accepts an array of constraint objects, each with the following proper
           "maxDepth": 3
         },
         {
-          "modulePrefix": "@lib/components",
-          "maxDepth": 4
+          "test": (importPath) => importPath.includes('/internal/')
         }
       ]
     ]
@@ -67,20 +70,22 @@ This rule accepts an array of constraint objects, each with the following proper
 }
 ```
 
-With multiple constraints, different module prefixes can have different depth requirements:
+Examples with different constraint types:
 
 ```js
+// Object-based constraint
 // ❌ Incorrect - @app/modules should have 3 segments
 import { a } from "@app/modules/part/sub/component";
 
 // ✅ Correct - @app/modules with 3 segments
 import { a } from "@app/modules/part";
 
-// ❌ Incorrect - @lib/components should have 4 segments
-import { a } from "@lib/components/button";
+// Function-based constraint
+// ❌ Incorrect - contains '/internal/'
+import { b } from "@lib/internal/utils";
 
-// ✅ Correct - @lib/components with 4 segments
-import { a } from "@lib/components/ui/button";
+// ✅ Correct - no '/internal/'
+import { b } from "@lib/public/utils";
 ```
 
 ## When Not To Use It
