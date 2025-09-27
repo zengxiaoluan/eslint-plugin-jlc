@@ -4,7 +4,7 @@
 
 ## Rule Details
 
-This rule aims to enforce consistent import paths for ECAD modules by preventing direct imports from specific module files. Instead, imports should be made from the module's index file.
+This rule aims to enforce consistent import paths for modules by preventing direct imports from specific module files. Instead, imports should be made from the module's index file.
 
 Examples of **incorrect** code for this rule:
 
@@ -28,33 +28,41 @@ This rule accepts an array of constraint objects, each with the following proper
 ### Configuration Examples
 
 **Single constraint:**
+
 ```json
 {
   "rules": {
-    "jlc/import-constraint": ["error", [
-      {
-        "modulePrefix": "@custom/modules",
-        "maxDepth": 4
-      }
-    ]]
+    "jlc/import-constraint": [
+      "error",
+      [
+        {
+          "modulePrefix": "@custom/modules",
+          "maxDepth": 4
+        }
+      ]
+    ]
   }
 }
 ```
 
 **Multiple constraints:**
+
 ```json
 {
   "rules": {
-    "jlc/import-constraint": ["error", [
-      {
-        "modulePrefix": "@app/modules",
-        "maxDepth": 3
-      },
-      {
-        "modulePrefix": "@lib/components",
-        "maxDepth": 4
-      }
-    ]]
+    "jlc/import-constraint": [
+      "error",
+      [
+        {
+          "modulePrefix": "@app/modules",
+          "maxDepth": 3
+        },
+        {
+          "modulePrefix": "@lib/components",
+          "maxDepth": 4
+        }
+      ]
+    ]
   }
 }
 ```
@@ -68,7 +76,7 @@ import { a } from "@app/modules/part/sub/component";
 // ✅ Correct - @app/modules with 3 segments
 import { a } from "@app/modules/part";
 
-// ❌ Incorrect - @lib/components should have 4 segments  
+// ❌ Incorrect - @lib/components should have 4 segments
 import { a } from "@lib/components/button";
 
 // ✅ Correct - @lib/components with 4 segments
