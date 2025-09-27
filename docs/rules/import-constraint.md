@@ -20,32 +20,59 @@ import { a } from "@app/modules/part";
 
 ## Options
 
-This rule accepts an options object with the following properties:
+This rule accepts an array of constraint objects, each with the following properties:
 
-- `modulePrefix` (string): The import path prefix to check. Default: `"@app/modules"`
-- `maxDepth` (integer): The expected number of path segments. Default: `3`
+- `modulePrefix` (string, required): The import path prefix to check
+- `maxDepth` (integer, optional): The expected number of path segments. Default: `3`
 
 ### Configuration Examples
 
+**Single constraint:**
 ```json
 {
   "rules": {
-    "jlc/import-constraint": ["error", {
-      "modulePrefix": "@custom/modules",
-      "maxDepth": 4
-    }]
+    "jlc/import-constraint": ["error", [
+      {
+        "modulePrefix": "@custom/modules",
+        "maxDepth": 4
+      }
+    ]]
   }
 }
 ```
 
-With the above configuration:
+**Multiple constraints:**
+```json
+{
+  "rules": {
+    "jlc/import-constraint": ["error", [
+      {
+        "modulePrefix": "@app/modules",
+        "maxDepth": 3
+      },
+      {
+        "modulePrefix": "@lib/components",
+        "maxDepth": 4
+      }
+    ]]
+  }
+}
+```
+
+With multiple constraints, different module prefixes can have different depth requirements:
 
 ```js
-// ❌ Incorrect - too many path segments
-import { a } from "@custom/modules/part/sub/component";
+// ❌ Incorrect - @app/modules should have 3 segments
+import { a } from "@app/modules/part/sub/component";
 
-// ✅ Correct - expected depth
-import { a } from "@custom/modules/part/sub";
+// ✅ Correct - @app/modules with 3 segments
+import { a } from "@app/modules/part";
+
+// ❌ Incorrect - @lib/components should have 4 segments  
+import { a } from "@lib/components/button";
+
+// ✅ Correct - @lib/components with 4 segments
+import { a } from "@lib/components/ui/button";
 ```
 
 ## When Not To Use It

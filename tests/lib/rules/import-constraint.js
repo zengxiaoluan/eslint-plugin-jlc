@@ -19,15 +19,23 @@ const ruleTester = new RuleTester();
 ruleTester.run("import-constraint", rule, {
   valid: [
     {
+      code: `import {a} from 'a/b/c';
+import {b} from 'a/a/c/d';`,
+      options: [[
+        { modulePrefix: "a/b", maxDepth: 3 },
+        { modulePrefix: "a/a", maxDepth: 4 },
+      ]],
+    },
+    {
       code: "import {a} from '@app/modules/part'",
     },
     {
       code: "import {a} from '@custom/modules/part'",
-      options: [{ modulePrefix: "@custom/modules" }],
+      options: [[{ modulePrefix: "@custom/modules" }]],
     },
     {
       code: "import {a} from '@app/modules/part/sub/component'",
-      options: [{ maxDepth: 5 }],
+      options: [[{ modulePrefix: "@app/modules", maxDepth: 5 }]],
     },
   ],
 
@@ -38,12 +46,12 @@ ruleTester.run("import-constraint", rule, {
     },
     {
       code: "import {a} from '@custom/modules/part/sub'",
-      options: [{ modulePrefix: "@custom/modules" }],
+      options: [[{ modulePrefix: "@custom/modules" }]],
       errors: [{ messageId: "import-constraint" }],
     },
     {
       code: "import {a} from '@app/modules/part'",
-      options: [{ maxDepth: 4 }],
+      options: [[{ modulePrefix: "@app/modules", maxDepth: 4 }]],
       errors: [{ messageId: "import-constraint" }],
     },
   ],
